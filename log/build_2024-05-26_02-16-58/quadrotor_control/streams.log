@@ -1,0 +1,27 @@
+[0.178s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16
+[0.368s] [35m[1mConsolidate compiler generated dependencies of target quadrotor_mpc[0m
+[0.368s] [ 50%] Built target quadrotor_vision
+[0.368s] [ 75%] [32mBuilding CXX object CMakeFiles/quadrotor_mpc.dir/src/quadrotor_mpc.cpp.o[0m
+[2.442s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.442s]                  from [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:8[m[K:
+[2.442s] [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:[m[K In lambda function:
+[2.442s] [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:82:48:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+[2.442s]    82 |                 RCLCPP_INFO(this->get_logger(),[01;35m[K"p:\n"[m[K,p)
+[2.442s]       |                                                [01;35m[K^~~~~~[m[K
+[2.442s] [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:83:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kx[m[K’
+[2.442s]    83 |                 [01;31m[Kx[m[K = response->state.twist.linear.x;
+[2.442s]       |                 [01;31m[K^[m[K
+[4.168s] gmake[2]: *** [CMakeFiles/quadrotor_mpc.dir/build.make:76: CMakeFiles/quadrotor_mpc.dir/src/quadrotor_mpc.cpp.o] Error 1
+[4.168s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/quadrotor_mpc.dir/all] Error 2
+[4.168s] gmake: *** [Makefile:146: all] Error 2
+[4.170s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16

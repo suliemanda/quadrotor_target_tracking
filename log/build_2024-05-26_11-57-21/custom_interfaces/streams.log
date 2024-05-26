@@ -1,0 +1,4 @@
+[0.195s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake /home/sulieman/quadrotor_target_tracking/src/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/sulieman/quadrotor_target_tracking/install/custom_interfaces
+[0.333s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.333s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.333s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)

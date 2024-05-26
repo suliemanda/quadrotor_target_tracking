@@ -1,0 +1,3 @@
+[0.154s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake /home/sulieman/quadrotor_target_tracking/src/quadrotor_control -DCMAKE_INSTALL_PREFIX=/home/sulieman/quadrotor_target_tracking/install/quadrotor_control
+[0.291s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.291s] -- Override CMake install command with custom implementation using symlinks instead of copying resources

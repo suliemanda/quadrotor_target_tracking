@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+
+
+<robot name="dji_m100" >
+
+  <!-- <link name="base_link"></link> -->
+    <link name="quadrotor">
+      <inertial>
+        <mass value="2.355" />
+        <inertia ixx="0.01152" ixy="0.0" ixz="0.0" iyy="0.01152" iyz="0.0" izz="0.0218" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0.105" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://kr5_description/meshes/dji_m100.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.105" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://kr5_description/meshes/dji_m100.dae"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="rotor1">
+      <visual>
+        <geometry>
+          <cylinder length="0.05" radius="0.01"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1 0 0 1"/>
+        </material>
+      </visual>
+      <inertial>
+        <mass value="0.00001" />
+        <inertia ixx="0.000000000001" ixy="0.0" ixz="0.0" iyy="0.0000000000000001" iyz="0.0" izz="0.00000000000000001" />
+      </inertial>
+    </link>
+    <joint name="rotor1_joint" type="revolute">
+      <origin xyz="0.229809 -0.229809 0.2" rpy="0.0 0.0 0.0" />
+      <parent link="quadrotor"/>
+      <child link="rotor1"/>
+      <limit effort="0" velocity="00.0" lower="0.0" upper="0.0" />
+    </joint>
+    <link name="rotor2">
+      <visual>
+        <geometry>
+          <cylinder length="0.05" radius="0.01"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1 0 0 1"/>
+        </material>
+      </visual>
+      <inertial>
+        <mass value="0.00001" />
+        <inertia ixx="0.000000000001" ixy="0.0" ixz="0.0" iyy="0.0000000000000001" iyz="0.0" izz="0.00000000000000001" />
+      </inertial>
+    </link>
+    <joint name="rotor2_joint" type="revolute">
+      <origin xyz="0.229809 0.229809 0.2" rpy="0.0 0.0 0.0" />
+
+      <parent link="quadrotor"/>
+      <child link="rotor2"/>
+      <limit effort="0" velocity="00.0" lower="0.0" upper="0.0" />
+    </joint>
+    <link name="rotor3">
+      <visual>
+        <geometry>
+          <cylinder length="0.05" radius="0.01"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1 0 0 1"/>
+        </material>
+      </visual>
+      <inertial>
+        <mass value="0.00001" />
+        <inertia ixx="0.000000000001" ixy="0.0" ixz="0.0" iyy="0.0000000000000001" iyz="0.0" izz="0.00000000000000001" />
+      </inertial>
+    </link>
+    <joint name="rotor3_joint" type="revolute">
+      <origin xyz="-0.229809 0.229809 0.2" rpy="0.0 0.0 0.0" />
+      <parent link="quadrotor"/>
+      <child link="rotor3"/>
+      <limit effort="0" velocity="00.0" lower="0.0" upper="0.0" />
+    </joint>
+    <link name="rotor4">
+      <visual>
+        <geometry>
+          <cylinder length="0.05" radius="0.01"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1 0 0 1"/>
+        </material>
+      </visual>
+      <inertial>
+        <mass value="0.00001" />
+        <inertia ixx="0.000000000001" ixy="0.0" ixz="0.0" iyy="0.0000000000000001" iyz="0.0" izz="0.00000000000000001" />
+      </inertial>
+    </link>
+    <joint name="rotor4_joint" type="revolute">
+      <origin xyz="-0.229809 -0.229809 0.2" rpy="0.0 0.0 0.0" />
+      <parent link="quadrotor"/>
+      <child link="rotor4"/>
+      <limit effort="0" velocity="00.0" lower="0.0" upper="0.0" />
+    </joint>
+    <link name="led_link">
+      <inertial>
+        <mass value="0.0010" />
+        <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001" />
+      </inertial>
+      <visual>
+        <origin xyz="-0.1 0 0.1" rpy="0 0 0" />
+        <geometry>
+           <box size="0.025 0.025 0.05" />
+        </geometry>
+        <material name="green">
+            <color rgba="0 1 0 1"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="-0.1 0 0.1" rpy="0 0 0" />
+        <geometry>
+          <box size="0.025 0.025 0.025" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name='led_joint' type='revolute'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="quadrotor"/>
+      <child link="led_link"/>
+    <limit effort="0" velocity="00.0" lower="0.0" upper="0.0" />
+
+    </joint>
+
+    <!--Gazebo elements -->
+    <!-- reference to gazebo colors -->
+    <gazebo reference="led_link">
+      <material>Gazebo/Green</material>
+    </gazebo>
+
+
+<gazebo>
+  <plugin name="rotor1_thrust" filename="libgazebo_ros_force.so">
+
+    <ros>
+  
+      <!-- Add a namespace -->
+      <namespace>/quadrotor</namespace>
+  
+      <!-- Remap the default topic -->
+      <remapping>gazebo_ros_force:=rotor1</remapping>
+  
+    </ros>
+  
+    <!-- Name of link within model which will receive the force -->
+    <link_name>rotor1</link_name>
+  
+    <!-- Frame where the force/torque will be applied (options: world; link)-->
+    <force_frame>link</force_frame>
+  
+  </plugin>
+  <plugin name="rotor2_thrust" filename="libgazebo_ros_force.so">
+
+    <ros>
+  
+      <!-- Add a namespace -->
+      <namespace>/quadrotor</namespace>
+  
+      <!-- Remap the default topic -->
+      <remapping>gazebo_ros_force:=rotor2</remapping>
+  
+    </ros>
+  
+    <!-- Name of link within model which will receive the force -->
+    <link_name>rotor2</link_name>
+  
+    <!-- Frame where the force/torque will be applied (options: world; link)-->
+    <force_frame>link</force_frame>
+  
+  </plugin>
+  <plugin name="rotor3_thrust" filename="libgazebo_ros_force.so">
+
+    <ros>
+  
+      <!-- Add a namespace -->
+      <namespace>/quadrotor</namespace>
+  
+      <!-- Remap the default topic -->
+      <remapping>gazebo_ros_force:=rotor3</remapping>
+  
+    </ros>
+  
+    <!-- Name of link within model which will receive the force -->
+    <link_name>rotor3</link_name>
+  
+    <!-- Frame where the force/torque will be applied (options: world; link)-->
+    <force_frame>link</force_frame>
+  
+  </plugin>
+  <plugin name="rotor4_thrust" filename="libgazebo_ros_force.so">
+
+    <ros>
+  
+      <!-- Add a namespace -->
+      <namespace>/quadrotor</namespace>
+  
+      <!-- Remap the default topic -->
+      <remapping>gazebo_ros_force:=rotor4</remapping>
+  
+    </ros>
+  
+    <!-- Name of link within model which will receive the force -->
+    <link_name>rotor4</link_name>
+  
+    <!-- Frame where the force/torque will be applied (options: world; link)-->
+    <force_frame>link</force_frame>
+  
+  </plugin>
+  
+  <!-- <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so"> -->
+    <!-- <ros> -->
+      <!-- <namespace>/plug</namespace> -->
+      <!-- <argument>model_states:=model_states_plug</argument> -->
+      <!-- <argument>link_states:=link_states_plug</argument> -->
+    <!-- </ros> -->
+    <!-- <update_rate>1.0</update_rate> -->
+  <!-- </plugin> -->
+</gazebo>
+
+
+</robot>
+<!--gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so -s libgazebo_ros_force_system.so myworld.world-->
+<!--export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:-->

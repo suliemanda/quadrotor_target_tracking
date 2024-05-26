@@ -1,0 +1,27 @@
+[0.154s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16
+[0.346s] [ 25%] [32mBuilding CXX object CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o[0m
+[0.346s] [ 75%] Built target quadrotor_mpc
+[2.664s] [100%] [32m[1mLinking CXX executable quadrotor_vision[0m
+[2.779s] [100%] Built target quadrotor_vision
+[2.787s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16
+[2.803s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/quadrotor_control
+[2.808s] -- Install configuration: ""
+[2.808s] -- Execute custom install script
+[2.808s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_mpc
+[2.809s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_vision
+[2.809s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/package_run_dependencies/quadrotor_control
+[2.809s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/parent_prefix_path/quadrotor_control
+[2.809s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.sh
+[2.809s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.dsv
+[2.809s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.sh
+[2.809s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.dsv
+[2.809s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.bash
+[2.810s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.sh
+[2.810s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.zsh
+[2.810s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.dsv
+[2.810s] -- Symlinking: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.dsv
+[2.815s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/packages/quadrotor_control
+[2.815s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig.cmake
+[2.815s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig-version.cmake
+[2.815s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.xml
+[2.816s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/quadrotor_control

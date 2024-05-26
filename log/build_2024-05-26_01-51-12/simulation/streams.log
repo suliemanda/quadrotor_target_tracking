@@ -1,0 +1,46 @@
+[0.822s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/simulation': PYTHONPATH=/home/sulieman/quadrotor_target_tracking/build/simulation/prefix_override:/home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/sulieman/quadrotor_target_tracking/build/simulation/build --no-deps install_data
+[1.031s] running develop
+[1.031s] /home/sulieman/.local/lib/python3.10/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.031s] !!
+[1.031s] 
+[1.031s]         ********************************************************************************
+[1.031s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.031s]         Instead, use pypa/build, pypa/installer or other
+[1.031s]         standards-based tools.
+[1.031s] 
+[1.031s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.031s]         ********************************************************************************
+[1.031s] 
+[1.031s] !!
+[1.031s]   easy_install.initialize_options(self)
+[1.054s] /home/sulieman/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.054s] !!
+[1.054s] 
+[1.054s]         ********************************************************************************
+[1.054s]         Please avoid running ``setup.py`` directly.
+[1.054s]         Instead, use pypa/build, pypa/installer or other
+[1.054s]         standards-based tools.
+[1.054s] 
+[1.054s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.054s]         ********************************************************************************
+[1.054s] 
+[1.054s] !!
+[1.054s]   self.initialize_options()
+[1.177s] running egg_info
+[1.193s] writing simulation.egg-info/PKG-INFO
+[1.193s] writing dependency_links to simulation.egg-info/dependency_links.txt
+[1.193s] writing requirements to simulation.egg-info/requires.txt
+[1.193s] writing top-level names to simulation.egg-info/top_level.txt
+[1.216s] reading manifest file 'simulation.egg-info/SOURCES.txt'
+[1.216s] writing manifest file 'simulation.egg-info/SOURCES.txt'
+[1.228s] running build_ext
+[1.228s] Creating /home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages/simulation.egg-link (link to .)
+[1.228s] 
+[1.228s] Installed /home/sulieman/quadrotor_target_tracking/build/simulation
+[1.228s] running install_data
+[1.228s] copying resource/simulation -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/ament_index/resource_index/packages
+[1.228s] copying package.xml -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation
+[1.228s] copying world/canyonview_field.world -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/world
+[1.229s] copying launch/target_tracking.launch.py -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/launch
+[1.229s] copying config/simulation.yaml -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/config
+[1.248s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/simulation' returned '0': PYTHONPATH=/home/sulieman/quadrotor_target_tracking/build/simulation/prefix_override:/home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/sulieman/quadrotor_target_tracking/build/simulation/build --no-deps install_data

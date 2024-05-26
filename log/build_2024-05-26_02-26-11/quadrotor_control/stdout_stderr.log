@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target quadrotor_mpc[0m
+[ 50%] Built target quadrotor_vision
+[ 75%] [32mBuilding CXX object CMakeFiles/quadrotor_mpc.dir/src/quadrotor_mpc.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:8[m[K:
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:[m[K In lambda function:
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:82:49:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+   82 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"p:\n"[m[K, p);
+      |                                                 [01;35m[K^~~~~~[m[K
+[100%] [32m[1mLinking CXX executable quadrotor_mpc[0m
+[100%] Built target quadrotor_mpc
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_mpc
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_vision
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/package_run_dependencies/quadrotor_control
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/parent_prefix_path/quadrotor_control
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.sh
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.dsv
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.bash
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.sh
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.zsh
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.dsv
+-- Symlinking: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.dsv
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/packages/quadrotor_control
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig.cmake
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig-version.cmake
+-- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.xml

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/quadrotor_vision" "TARGETS" "quadrotor_vision" "DESTINATION" "lib/quadrotor_control")

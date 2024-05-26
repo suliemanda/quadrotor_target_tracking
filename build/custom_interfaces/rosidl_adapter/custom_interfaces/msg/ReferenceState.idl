@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_interfaces/msg/ReferenceState.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+#include "geometry_msgs/msg/Twist.idl"
+#include "std_msgs/msg/Header.idl"
+
+module custom_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Message Type for the desired quadrotor state, supports receding horizon controllers by providing a list of future states")
+    struct ReferenceState {
+      std_msgs::msg::Header header;
+
+      geometry_msgs::msg::Pose current_pose;
+
+      geometry_msgs::msg::Twist current_twist;
+
+      @verbatim (language="comment", text=
+        "number of future states (for receding horizon controllers)")
+      uint32 n;
+
+      @verbatim (language="comment", text=
+        "time between future states")
+      float dt;
+
+      sequence<geometry_msgs::msg::Pose> future_pose;
+
+      sequence<geometry_msgs::msg::Twist> future_twist;
+    };
+  };
+};

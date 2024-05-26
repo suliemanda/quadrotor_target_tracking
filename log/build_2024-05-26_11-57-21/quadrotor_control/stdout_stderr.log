@@ -1,0 +1,2 @@
+-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources

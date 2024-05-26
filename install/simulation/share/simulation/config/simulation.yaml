@@ -1,0 +1,21 @@
+GazeoSimulation:
+  quadrotor_description: dji_m100  # Name of the quadrotor
+  world_description: canyonview_field
+  simulation_step_frequency: 240  # Frequency at which the simulation is stepped
+  state_topic: quadrotor_state  # Topic name for the quadrotor state messages
+  
+MPCController:
+  Q: [120.0, 120.0, 120.0, 10.0, 10.0, 10.0, 20.0, 20.0, 2.0, 5.0, 5.0, 0.2]  #state weights
+  R: [0.0, 0.0, 0.0, 0.0]  #control weights
+  dt: 0.1 #discretization step
+  N: 10 # number of nodes
+  quadrotor_description: dji_m100  # quadrotor name (for config file)
+  state_service: /gazebo_state_serv/get_entity_state
+  reference_topic: quadrotor_reference
+  rotor_topic_pref: /quadrotor/rotor
+ReferencePublisher: 
+  dt: 0.1 #future discretization step
+  N: 10 #number of future points
+  publish_rate: 100.0
+  
+  

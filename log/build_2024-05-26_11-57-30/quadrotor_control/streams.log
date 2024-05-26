@@ -1,0 +1,54 @@
+[0.151s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake /home/sulieman/quadrotor_target_tracking/src/quadrotor_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sulieman/quadrotor_target_tracking/install/quadrotor_control
+[0.335s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.335s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.335s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.335s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.335s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.335s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.335s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.339s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.341s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.398s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.500s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.526s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.576s] -- Found custom_interfaces: 0.0.0 (/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/cmake)
+[0.608s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.738s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.784s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.784s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/include/quadrotor_control>
+[0.784s] -- Configured cppcheck exclude dirs and/or files: 
+[0.784s] -- Added test 'lint_cmake' to check CMake code style
+[0.785s] -- Added test 'uncrustify' to check C / C++ code style
+[0.785s] -- Configured uncrustify additional arguments: 
+[0.785s] -- Added test 'xmllint' to check XML markup files
+[0.786s] -- Configuring done
+[0.797s] -- Generating done
+[0.798s] -- Build files have been written to: /home/sulieman/quadrotor_target_tracking/build/quadrotor_control
+[0.805s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake /home/sulieman/quadrotor_target_tracking/src/quadrotor_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sulieman/quadrotor_target_tracking/install/quadrotor_control
+[0.805s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16
+[0.827s] [35m[1mConsolidate compiler generated dependencies of target quadrotor_vision[0m
+[0.827s] [35m[1mConsolidate compiler generated dependencies of target quadrotor_mpc[0m
+[0.837s] [ 50%] Built target quadrotor_vision
+[0.840s] [100%] Built target quadrotor_mpc
+[0.846s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16
+[0.866s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/quadrotor_control
+[0.870s] -- Install configuration: ""
+[0.870s] -- Execute custom install script
+[0.870s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_mpc
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_vision
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/package_run_dependencies/quadrotor_control
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/parent_prefix_path/quadrotor_control
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.sh
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.dsv
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.sh
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.dsv
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.bash
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.sh
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.zsh
+[0.871s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.dsv
+[0.871s] -- Symlinking: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.dsv
+[0.876s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/packages/quadrotor_control
+[0.876s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig.cmake
+[0.876s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig-version.cmake
+[0.877s] -- Up-to-date symlink: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.xml
+[0.878s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/quadrotor_control

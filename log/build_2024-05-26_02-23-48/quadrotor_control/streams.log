@@ -1,0 +1,38 @@
+[0.166s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16
+[0.356s] [35m[1mConsolidate compiler generated dependencies of target quadrotor_mpc[0m
+[0.356s] [ 50%] Built target quadrotor_vision
+[0.357s] [ 75%] [32mBuilding CXX object CMakeFiles/quadrotor_mpc.dir/src/quadrotor_mpc.cpp.o[0m
+[2.411s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.411s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.411s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.411s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.411s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.411s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.412s]                  from [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:8[m[K:
+[2.412s] [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:[m[K In lambda function:
+[2.412s] [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:82:49:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+[2.412s]    82 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"p:\n"[m[K, p);
+[2.412s]       |                                                 [01;35m[K^~~~~~[m[K
+[2.431s] [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:[m[K In constructor ‘[01m[Kquadrotor_mpc::quadrotor_mpc()[m[K’:
+[2.431s] [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:207:92:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::CallbackGroup::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::CallbackGroup>[m[K’} to ‘[01m[Kconst rmw_qos_profile_t&[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s&[m[K’}
+[2.431s]   207 |         state_client = this->create_client<gazebo_msgs::srv::GetEntityState>(state_service,[01;31m[Kg1[m[K);
+[2.431s]       |                                                                                            [01;31m[K^~[m[K
+[2.431s]       |                                                                                            [01;31m[K|[m[K
+[2.432s]       |                                                                                            [01;31m[Krclcpp::CallbackGroup::SharedPtr {aka std::shared_ptr<rclcpp::CallbackGroup>}[m[K
+[2.432s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[2.432s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.432s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.432s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.432s]                  from [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_mpc.cpp:8[m[K:
+[2.432s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:127:29:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Ktypename rclcpp::Client<ServiceT>::SharedPtr rclcpp::Node::create_client(const string&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr) [with ServiceT = gazebo_msgs::srv::GetEntityState; typename rclcpp::Client<ServiceT>::SharedPtr = std::shared_ptr<rclcpp::Client<gazebo_msgs::srv::GetEntityState> >; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::CallbackGroup::SharedPtr = std::shared_ptr<rclcpp::CallbackGroup>][m[K’
+[2.432s]   127 |   [01;36m[Kconst rmw_qos_profile_t & qos_profile[m[K,
+[2.432s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[4.145s] gmake[2]: *** [CMakeFiles/quadrotor_mpc.dir/build.make:76: CMakeFiles/quadrotor_mpc.dir/src/quadrotor_mpc.cpp.o] Error 1
+[4.145s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/quadrotor_mpc.dir/all] Error 2
+[4.145s] gmake: *** [Makefile:146: all] Error 2
+[4.147s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16

@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating simulation.egg-info
+writing simulation.egg-info/PKG-INFO
+writing dependency_links to simulation.egg-info/dependency_links.txt
+writing requirements to simulation.egg-info/requires.txt
+writing top-level names to simulation.egg-info/top_level.txt
+writing manifest file 'simulation.egg-info/SOURCES.txt'
+reading manifest file 'simulation.egg-info/SOURCES.txt'
+writing manifest file 'simulation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages/simulation.egg-link (link to .)
+
+Installed /home/sulieman/quadrotor_target_tracking/build/simulation
+running install_data
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/ament_index
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/ament_index/resource_index
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/ament_index/resource_index/packages
+copying resource/simulation -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/ament_index/resource_index/packages
+copying package.xml -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/world
+copying world/canyonview_field.world -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/world
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/launch
+copying launch/target_tracking.launch.py -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/launch
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/config
+copying config/simulation.yaml -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/config

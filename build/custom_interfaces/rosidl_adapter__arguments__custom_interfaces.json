@@ -1,0 +1,6 @@
+{
+  "package_name": "custom_interfaces",
+  "non_idl_tuples": [
+    "/home/sulieman/quadrotor_target_tracking/src/custom_interfaces:msg/ReferenceState.msg"
+  ]
+}

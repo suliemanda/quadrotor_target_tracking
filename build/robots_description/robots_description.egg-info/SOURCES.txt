@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+config/dji_m100_params.yaml
+meshes/dji_m100.dae
+resource/robots_description
+robots/dji_m100.urdf
+robots_description/__init__.py
+robots_description.egg-info/PKG-INFO
+robots_description.egg-info/SOURCES.txt
+robots_description.egg-info/dependency_links.txt
+robots_description.egg-info/requires.txt
+robots_description.egg-info/top_level.txt
+robots_description.egg-info/zip-safe
