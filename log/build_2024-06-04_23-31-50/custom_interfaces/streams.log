@@ -1,0 +1,23 @@
+[0.211s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/custom_interfaces -- -j16 -l16
+[0.413s] [  3%] Built target custom_interfaces__cpp
+[0.413s] [ 12%] Built target custom_interfaces__rosidl_generator_c
+[0.413s] [ 12%] Built target ament_cmake_python_symlink_custom_interfaces
+[0.413s] [ 22%] Built target custom_interfaces__rosidl_typesupport_cpp
+[0.413s] [ 32%] Built target custom_interfaces__rosidl_typesupport_c
+[0.413s] [ 41%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.413s] [ 51%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp
+[0.413s] [ 61%] Built target custom_interfaces__rosidl_typesupport_introspection_c
+[0.413s] [ 70%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c
+[0.413s] [ 70%] Built target custom_interfaces
+[0.413s] [ 74%] Built target custom_interfaces__py
+[0.413s] [ 80%] Built target custom_interfaces__rosidl_generator_py
+[0.413s] [100%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.413s] [100%] Built target custom_interfaces__rosidl_typesupport_c__pyext
+[0.413s] [100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.413s] running egg_info
+[0.413s] writing custom_interfaces.egg-info/PKG-INFO
+[0.413s] writing dependency_links to custom_interfaces.egg-info/dependency_links.txt
+[0.413s] writing top-level names to custom_interfaces.egg-info/top_level.txt
+[0.507s] reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[0.507s] writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[0.525s] [100%] Built target ament_cmake_python_build_custom_interfaces_egg

@@ -79,8 +79,8 @@ public:
                 double y = response->state.pose.position.y;
                 double z = response->state.pose.position.z;
                 p = Eigen::Vector3d{x, y, z};
-                std::cout << "p:\n"
-                          << p << "\n";
+                //std::cout << "p:\n"
+                  //        << p << "\n";
                 x = response->state.twist.linear.x;
                 y = response->state.twist.linear.y;
                 z = response->state.twist.linear.z;

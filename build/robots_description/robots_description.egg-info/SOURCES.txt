@@ -2,9 +2,14 @@ package.xml
 setup.cfg
 setup.py
 config/dji_m100_params.yaml
+meshes/Marker0.jpeg
+meshes/Marker0.mtl
+meshes/Marker0.obj
 meshes/dji_m100.dae
 resource/robots_description
 robots/dji_m100.urdf
+robots/ground_robot.xacro
+robots/ground_robot.xacro.urdf
 robots_description/__init__.py
 robots_description.egg-info/PKG-INFO
 robots_description.egg-info/SOURCES.txt

@@ -1,0 +1,31 @@
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:[m[K In lambda function:
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:67:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::aruco[m[K’ has not been declared
+   67 |                 cv::[01;31m[Karuco[m[K::DetectorParameters detectorParams = cv::aruco::DetectorParameters();
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:68:29:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco[m[K’ is not a member of ‘[01m[Kcv[m[K’
+   68 |                 cv::Ptr<cv::[01;31m[Karuco[m[K::Dictionary> dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_4X4_50);
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:68:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   68 |                 cv::Ptr<cv::aruco::Dictionary[01;31m[K>[m[K dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_4X4_50);
+      |                                              [01;31m[K^[m[K
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:68:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::aruco[m[K’ has not been declared
+   68 |                 cv::Ptr<cv::aruco::Dictionary> dictionary = cv::[01;31m[Karuco[m[K::getPredefinedDictionary(cv::aruco::DICT_4X4_50);
+      |                                                                 [01;31m[K^~~~~[m[K
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:68:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::aruco[m[K’ has not been declared
+   68 |                 cv::Ptr<cv::aruco::Dictionary> dictionary = cv::aruco::getPredefinedDictionary(cv::[01;31m[Karuco[m[K::DICT_4X4_50);
+      |                                                                                                    [01;31m[K^~~~~[m[K
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:69:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::aruco[m[K’ has not been declared
+   69 |                 cv::[01;31m[Karuco[m[K::ArucoDetector detector(dictionary, detectorParams);
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:70:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector[m[K’ was not declared in this scope
+   70 |                 [01;31m[Kdetector[m[K.detectMarkers(img, markerCorners, markerIds, rejectedCandidates);
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:71:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::aruco[m[K’ has not been declared
+   71 |                 cv::[01;31m[Karuco[m[K::drawDetectedMarkers(img_copy, markerCorners, markerIds);
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:68:48:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdictionary[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   68 |                 cv::Ptr<cv::aruco::Dictionary> [01;35m[Kdictionary[m[K = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_4X4_50);
+      |                                                [01;35m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/quadrotor_vision.dir/build.make:76: CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/quadrotor_vision.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

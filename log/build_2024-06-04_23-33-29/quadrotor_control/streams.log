@@ -1,0 +1,41 @@
+[0.152s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16
+[0.332s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.332s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.332s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.332s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.332s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.333s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.333s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.342s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.343s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.395s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.490s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.514s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.566s] -- Found custom_interfaces: 0.0.0 (/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/cmake)
+[0.595s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.732s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.778s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.778s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/include/quadrotor_control>
+[0.778s] -- Configured cppcheck exclude dirs and/or files: 
+[0.778s] -- Added test 'lint_cmake' to check CMake code style
+[0.779s] -- Added test 'uncrustify' to check C / C++ code style
+[0.779s] -- Configured uncrustify additional arguments: 
+[0.779s] -- Added test 'xmllint' to check XML markup files
+[0.780s] -- Configuring done
+[0.789s] -- Generating done
+[0.790s] -- Build files have been written to: /home/sulieman/quadrotor_target_tracking/build/quadrotor_control
+[0.808s] [35m[1mConsolidate compiler generated dependencies of target quadrotor_vision[0m
+[0.809s] [35m[1mConsolidate compiler generated dependencies of target quadrotor_mpc[0m
+[0.819s] [ 25%] [32mBuilding CXX object CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o[0m
+[0.822s] [ 50%] [32mBuilding CXX object CMakeFiles/quadrotor_mpc.dir/src/quadrotor_mpc.cpp.o[0m
+[0.948s] [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+[0.949s]     7 | #include [01;31m[K<cv_bridge/cv_bridge.h>[m[K
+[0.949s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.949s] compilation terminated.
+[0.952s] gmake[2]: *** [CMakeFiles/quadrotor_vision.dir/build.make:76: CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o] Error 1
+[0.952s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/quadrotor_vision.dir/all] Error 2
+[0.952s] gmake[1]: *** Waiting for unfinished jobs....
+[7.198s] [ 75%] [32m[1mLinking CXX executable quadrotor_mpc[0m
+[7.509s] [ 75%] Built target quadrotor_mpc
+[7.510s] gmake: *** [Makefile:146: all] Error 2
+[7.511s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16

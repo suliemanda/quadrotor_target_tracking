@@ -1,0 +1,11 @@
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:[m[K In lambda function:
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:82:40:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kvoid cv::aruco::drawAxis(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::InputArray, cv::InputArray, float)[m[K’
+   82 |                     [01;31m[Kcv::aruco::drawAxis(img_copy, cv::Mat::eye(3,3,CV_64F), cv::Mat::zeros(3,1,CV_64F), cv::Mat::zeros(3,1,CV_64F), 0.1)[m[K;
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:9[m[K:
+[01m[K/usr/include/opencv4/opencv2/aruco.hpp:494:19:[m[K [01;36m[Knote: [m[Kdeclared here
+  494 | CV_EXPORTS_W void [01;36m[KdrawAxis[m[K(InputOutputArray image, InputArray cameraMatrix, InputArray distCoeffs,
+      |                   [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/quadrotor_vision.dir/build.make:76: CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/quadrotor_vision.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

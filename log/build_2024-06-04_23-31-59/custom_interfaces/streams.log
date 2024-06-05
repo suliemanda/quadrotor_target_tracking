@@ -1,0 +1,24 @@
+[0.196s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/custom_interfaces -- -j16 -l16
+[0.385s] [  3%] Built target custom_interfaces__cpp
+[0.386s] [ 12%] Built target custom_interfaces__rosidl_generator_c
+[0.386s] [ 12%] Built target ament_cmake_python_symlink_custom_interfaces
+[0.386s] [ 22%] Built target custom_interfaces__rosidl_typesupport_cpp
+[0.386s] [ 32%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.386s] [ 41%] Built target custom_interfaces__rosidl_typesupport_introspection_c
+[0.386s] [ 51%] Built target custom_interfaces__rosidl_typesupport_c
+[0.386s] [ 70%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp
+[0.386s] [ 70%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c
+[0.386s] [ 70%] Built target custom_interfaces
+[0.386s] [ 74%] Built target custom_interfaces__py
+[0.386s] [ 80%] Built target custom_interfaces__rosidl_generator_py
+[0.386s] [ 90%] Built target custom_interfaces__rosidl_typesupport_c__pyext
+[0.386s] [ 93%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.386s] [100%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.386s] running egg_info
+[0.386s] writing custom_interfaces.egg-info/PKG-INFO
+[0.386s] writing dependency_links to custom_interfaces.egg-info/dependency_links.txt
+[0.386s] writing top-level names to custom_interfaces.egg-info/top_level.txt
+[0.481s] reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[0.481s] writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[0.499s] [100%] Built target ament_cmake_python_build_custom_interfaces_egg
+[0.568s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/custom_interfaces -- -j16 -l16

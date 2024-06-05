@@ -1,3 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target quadrotor_vision[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/quadrotor_mpc.dir/src/quadrotor_mpc.cpp.o[0m
-[ 75%] Built target quadrotor_vision

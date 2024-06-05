@@ -16,6 +16,9 @@ find_package(Eigen3 3.3 REQUIRED)
 find_package(yaml-cpp REQUIRED)
 find_package(casadi REQUIRED)
 find_package(gazebo_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(OpenCV REQUIRED)
 
 add_executable(quadrotor_mpc src/quadrotor_mpc.cpp)
 target_link_libraries (quadrotor_mpc Eigen3::Eigen yaml-cpp casadi)
@@ -34,6 +37,8 @@ ament_target_dependencies(
   "custom_interfaces"
   "yaml-cpp"
   "gazebo_msgs"
+
+  
 )
 
 install(TARGETS quadrotor_mpc
@@ -57,6 +62,9 @@ install(TARGETS quadrotor_mpc
     "custom_interfaces"
     "yaml-cpp"
     "gazebo_msgs"
+    "sensor_msgs"
+    "cv_bridge"
+    "OpenCV"
   )
   
   install(TARGETS quadrotor_vision

@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target quadrotor_vision[0m
+[ 50%] Built target quadrotor_mpc
+[ 75%] [32mBuilding CXX object CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o[0m
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:[m[K In lambda function:
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:71:28:[m[K [01;31m[Kerror: [m[K‘[01m[KArucoDetector[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+   71 |                 cv::aruco::[01;31m[KArucoDetector[m[K detector(dictionary, detectorParams);
+      |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:72:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector[m[K’ was not declared in this scope
+   72 |                 [01;31m[Kdetector[m[K.detectMarkers(img, markerCorners, markerIds, rejectedCandidates);
+      |                 [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/quadrotor_vision.dir/build.make:76: CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/quadrotor_vision.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
