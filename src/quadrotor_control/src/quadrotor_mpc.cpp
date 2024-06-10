@@ -36,6 +36,7 @@ public:
         this->declare_parameter("dt", 0.1);
         this->declare_parameter("quadrotor_description", "dji_m100");
         this->declare_parameter("state_service", "/gazebo_state_serv/get_entity_state");
+        this->declare_parameter("state_topic", "quadrotor_state");
         this->declare_parameter("reference_topic", "quadrotor_reference");
         this->declare_parameter("rotor_topic_pref", "/quadrotor/rotor");
         N = this->get_parameter("N").as_int();
@@ -46,6 +47,7 @@ public:
         state_service = this->get_parameter("state_service").as_string();
         rotor_topic = this->get_parameter("rotor_topic_pref").as_string();
         ref_topic = this->get_parameter("reference_topic").as_string();
+        state_topic = this->get_parameter("state_topic").as_string();
         get_params();
 
         std::vector<double> torque2rotors_v = {torque2rotors(0, 0), torque2rotors(1, 0), torque2rotors(2, 0), torque2rotors(3, 0),
@@ -79,8 +81,8 @@ public:
                 double y = response->state.pose.position.y;
                 double z = response->state.pose.position.z;
                 p = Eigen::Vector3d{x, y, z};
-                //std::cout << "p:\n"
-                  //        << p << "\n";
+                // std::cout << "p:\n"
+                //         << p << "\n";
                 x = response->state.twist.linear.x;
                 y = response->state.twist.linear.y;
                 z = response->state.twist.linear.z;
@@ -104,6 +106,22 @@ public:
                     qvec = {Q.w(), Q.x(), Q.y(), Q.z()};
                 else
                     qvec = {-Q.w(), -Q.x(), -Q.y(), -Q.z()};
+                custom_interfaces::msg::ReferenceState state_msg;
+                state_msg.current_pose.position.x = p.x();
+                state_msg.current_pose.position.y = p.y();
+                state_msg.current_pose.position.z = p.z();
+                state_msg.current_twist.linear.x = v.x();
+                state_msg.current_twist.linear.y = v.y();
+                state_msg.current_twist.linear.z = v.z();
+                state_msg.current_twist.angular.x = w.x();
+                state_msg.current_twist.angular.y = w.y();
+                state_msg.current_twist.angular.z = w.z();
+                state_msg.current_pose.orientation.w = Q.w();
+                state_msg.current_pose.orientation.x = Q.x();
+                state_msg.current_pose.orientation.y = Q.y();
+                state_msg.current_pose.orientation.z = Q.z();
+
+                quadrotor_state_publisher_->publish(state_msg);
             }
             else
             {
@@ -141,6 +159,7 @@ public:
             trajvd.push_back(V);
             trajq.push_back(qd);
             trajwzd.push_back(wzd);
+            std::cout << "xd: " << xd << " yd: " << yd << " zd: " << zd << " vxd: " << vxd << " vyd: " << vyd <<  "\n";
 
             for (int i = 0; i < N; i++)
             {
@@ -181,7 +200,6 @@ public:
             rotor3_publisher_->publish(rotor3);
             rotor4_publisher_->publish(rotor4);
 
-            
             auto finish = std::chrono::high_resolution_clock::now();
             std::chrono::duration<double> elapsed = finish - start;
         };
@@ -203,6 +221,7 @@ public:
 
         ref_sub = this->create_subscription<custom_interfaces::msg::ReferenceState>(ref_topic, 10, ref_callback, sub_options);
         state_client = this->create_client<gazebo_msgs::srv::GetEntityState>(state_service, rmw_qos_profile_services_default, g1);
+        quadrotor_state_publisher_ = this->create_publisher<custom_interfaces::msg::ReferenceState>(state_topic, 10, pub_options);
         timer = create_wall_timer(5ms, timer_callback);
     }
 
@@ -253,6 +272,7 @@ public:
     rclcpp::Publisher<geometry_msgs::msg::Wrench>::SharedPtr rotor2_publisher_;
     rclcpp::Publisher<geometry_msgs::msg::Wrench>::SharedPtr rotor3_publisher_;
     rclcpp::Publisher<geometry_msgs::msg::Wrench>::SharedPtr rotor4_publisher_;
+    rclcpp::Publisher<custom_interfaces::msg::ReferenceState>::SharedPtr quadrotor_state_publisher_;
     rclcpp::Subscription<custom_interfaces::msg::ReferenceState>::SharedPtr ref_sub;
     rclcpp::TimerBase::SharedPtr timer;
 
@@ -288,6 +308,7 @@ public:
     std::string state_service;
     std::string ref_topic;
     std::string rotor_topic;
+    std::string state_topic;
 };
 
 int main(int argc, char *argv[])

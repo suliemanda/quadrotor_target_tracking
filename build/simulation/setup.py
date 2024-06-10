@@ -1,1 +1,0 @@
-/home/sulieman/quadrotor_target_tracking/src/simulation/setup.py

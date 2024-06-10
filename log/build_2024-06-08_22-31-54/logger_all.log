@@ -1,0 +1,377 @@
+[0.667s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.667s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7b6709430520>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b6709417fa0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b6709417fa0>>)
+[0.701s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.701s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.701s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.701s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.701s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.701s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.701s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sulieman/quadrotor_target_tracking'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore_ament_install'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_pkg']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_pkg'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_meta']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_meta'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ros']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ros'
+[0.711s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ground_robot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ground_robot_control) by extension 'ignore'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ground_robot_control) by extension 'ignore_ament_install'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ground_robot_control) by extensions ['colcon_pkg']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ground_robot_control) by extension 'colcon_pkg'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ground_robot_control) by extensions ['colcon_meta']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ground_robot_control) by extension 'colcon_meta'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ground_robot_control) by extensions ['ros']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ground_robot_control) by extension 'ros'
+[0.712s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ground_robot_control' with type 'ros.ament_cmake' and name 'ground_robot_control'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_control) by extensions ['ignore', 'ignore_ament_install']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_control) by extension 'ignore'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_control) by extension 'ignore_ament_install'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_control) by extensions ['colcon_pkg']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_control) by extension 'colcon_pkg'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_control) by extensions ['colcon_meta']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_control) by extension 'colcon_meta'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_control) by extensions ['ros']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadrotor_control) by extension 'ros'
+[0.713s] DEBUG:colcon.colcon_core.package_identification:Package 'src/quadrotor_control' with type 'ros.ament_cmake' and name 'quadrotor_control'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/robots_description) by extensions ['ignore', 'ignore_ament_install']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/robots_description) by extension 'ignore'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/robots_description) by extension 'ignore_ament_install'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/robots_description) by extensions ['colcon_pkg']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/robots_description) by extension 'colcon_pkg'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/robots_description) by extensions ['colcon_meta']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/robots_description) by extension 'colcon_meta'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/robots_description) by extensions ['ros']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/robots_description) by extension 'ros'
+[0.713s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robots_description' with type 'ros.ament_python' and name 'robots_description'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'ignore'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'ignore_ament_install'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['colcon_pkg']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'colcon_pkg'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['colcon_meta']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'colcon_meta'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['ros']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'ros'
+[0.713s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation' with type 'ros.ament_python' and name 'simulation'
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.785s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.785s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.806s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/sulieman/quadrotor_target_tracking/install
+[0.818s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 363 installed packages in /opt/ros/humble
+[0.818s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.866s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.867s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.867s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.867s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.867s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.867s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.867s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.867s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.867s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.867s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sulieman/quadrotor_target_tracking/build/custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces', 'merge_install': False, 'path': '/home/sulieman/quadrotor_target_tracking/src/custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.877s] Level 5:colcon.colcon_core.verb:set package 'ground_robot_control' build argument 'cmake_args' from command line to 'None'
+[0.877s] Level 5:colcon.colcon_core.verb:set package 'ground_robot_control' build argument 'cmake_target' from command line to 'None'
+[0.877s] Level 5:colcon.colcon_core.verb:set package 'ground_robot_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.877s] Level 5:colcon.colcon_core.verb:set package 'ground_robot_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.877s] Level 5:colcon.colcon_core.verb:set package 'ground_robot_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.877s] Level 5:colcon.colcon_core.verb:set package 'ground_robot_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.877s] Level 5:colcon.colcon_core.verb:set package 'ground_robot_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.877s] Level 5:colcon.colcon_core.verb:set package 'ground_robot_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.877s] Level 5:colcon.colcon_core.verb:set package 'ground_robot_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.877s] DEBUG:colcon.colcon_core.verb:Building package 'ground_robot_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sulieman/quadrotor_target_tracking/build/ground_robot_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control', 'merge_install': False, 'path': '/home/sulieman/quadrotor_target_tracking/src/ground_robot_control', 'symlink_install': False, 'test_result_base': None}
+[0.887s] Level 5:colcon.colcon_core.verb:set package 'quadrotor_control' build argument 'cmake_args' from command line to 'None'
+[0.887s] Level 5:colcon.colcon_core.verb:set package 'quadrotor_control' build argument 'cmake_target' from command line to 'None'
+[0.887s] Level 5:colcon.colcon_core.verb:set package 'quadrotor_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.887s] Level 5:colcon.colcon_core.verb:set package 'quadrotor_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.887s] Level 5:colcon.colcon_core.verb:set package 'quadrotor_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.887s] Level 5:colcon.colcon_core.verb:set package 'quadrotor_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.887s] Level 5:colcon.colcon_core.verb:set package 'quadrotor_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.887s] Level 5:colcon.colcon_core.verb:set package 'quadrotor_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.887s] Level 5:colcon.colcon_core.verb:set package 'quadrotor_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.887s] DEBUG:colcon.colcon_core.verb:Building package 'quadrotor_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control', 'merge_install': False, 'path': '/home/sulieman/quadrotor_target_tracking/src/quadrotor_control', 'symlink_install': False, 'test_result_base': None}
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'robots_description' build argument 'cmake_args' from command line to 'None'
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'robots_description' build argument 'cmake_target' from command line to 'None'
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'robots_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'robots_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'robots_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'robots_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'robots_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'robots_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'robots_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.897s] DEBUG:colcon.colcon_core.verb:Building package 'robots_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sulieman/quadrotor_target_tracking/build/robots_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sulieman/quadrotor_target_tracking/install/robots_description', 'merge_install': False, 'path': '/home/sulieman/quadrotor_target_tracking/src/robots_description', 'symlink_install': False, 'test_result_base': None}
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_target' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.909s] DEBUG:colcon.colcon_core.verb:Building package 'simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sulieman/quadrotor_target_tracking/build/simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sulieman/quadrotor_target_tracking/install/simulation', 'merge_install': False, 'path': '/home/sulieman/quadrotor_target_tracking/src/simulation', 'symlink_install': False, 'test_result_base': None}
+[0.919s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.930s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.930s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sulieman/quadrotor_target_tracking/src/custom_interfaces' with build type 'ament_cmake'
+[0.930s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sulieman/quadrotor_target_tracking/src/custom_interfaces'
+[0.945s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.945s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.945s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.980s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sulieman/quadrotor_target_tracking/src/ground_robot_control' with build type 'ament_cmake'
+[0.980s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sulieman/quadrotor_target_tracking/src/ground_robot_control'
+[0.992s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.992s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.030s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sulieman/quadrotor_target_tracking/src/quadrotor_control' with build type 'ament_cmake'
+[1.030s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sulieman/quadrotor_target_tracking/src/quadrotor_control'
+[1.041s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.041s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.077s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sulieman/quadrotor_target_tracking/src/robots_description' with build type 'ament_python'
+[1.077s] Level 1:colcon.colcon_core.shell:create_environment_hook('robots_description', 'ament_prefix_path')
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/hook/ament_prefix_path.ps1'
+[1.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/hook/ament_prefix_path.dsv'
+[1.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/hook/ament_prefix_path.sh'
+[1.100s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.100s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.134s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sulieman/quadrotor_target_tracking/src/simulation' with build type 'ament_python'
+[1.134s] Level 1:colcon.colcon_core.shell:create_environment_hook('simulation', 'ament_prefix_path')
+[1.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/hook/ament_prefix_path.ps1'
+[1.146s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/hook/ament_prefix_path.dsv'
+[1.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/hook/ament_prefix_path.sh'
+[1.157s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.157s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.193s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sulieman/quadrotor_target_tracking/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/custom_interfaces -- -j16 -l16
+[1.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sulieman/quadrotor_target_tracking/build/ground_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/ground_robot_control -- -j16 -l16
+[1.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16
+[1.332s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sulieman/quadrotor_target_tracking/src/robots_description'
+[1.344s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.344s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.517s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sulieman/quadrotor_target_tracking/src/simulation'
+[1.528s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.529s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.563s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sulieman/quadrotor_target_tracking/build/ground_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/ground_robot_control -- -j16 -l16
+[1.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sulieman/quadrotor_target_tracking/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/custom_interfaces -- -j16 -l16
+[1.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sulieman/quadrotor_target_tracking/build/ground_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/ground_robot_control
+[1.590s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ground_robot_control)
+[1.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sulieman/quadrotor_target_tracking/build/ground_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/ground_robot_control
+[1.606s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control' for CMake module files
+[1.607s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control' for CMake config files
+[1.607s] Level 1:colcon.colcon_core.shell:create_environment_hook('ground_robot_control', 'cmake_prefix_path')
+[1.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/hook/cmake_prefix_path.ps1'
+[1.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/hook/cmake_prefix_path.dsv'
+[1.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/hook/cmake_prefix_path.sh'
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/lib'
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/bin'
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/lib/pkgconfig/ground_robot_control.pc'
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/lib/python3.10/site-packages'
+[1.621s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/bin'
+[1.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.ps1'
+[1.643s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.dsv'
+[1.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.sh'
+[1.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.bash'
+[1.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.zsh'
+[1.645s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/colcon-core/packages/ground_robot_control)
+[1.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sulieman/quadrotor_target_tracking/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/custom_interfaces
+[1.674s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ground_robot_control)
+[1.690s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control' for CMake module files
+[1.690s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control' for CMake config files
+[1.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('ground_robot_control', 'cmake_prefix_path')
+[1.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/hook/cmake_prefix_path.ps1'
+[1.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/hook/cmake_prefix_path.dsv'
+[1.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/hook/cmake_prefix_path.sh'
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/lib'
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/bin'
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/lib/pkgconfig/ground_robot_control.pc'
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/lib/python3.10/site-packages'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/bin'
+[1.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.ps1'
+[1.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.dsv'
+[1.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.sh'
+[1.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.bash'
+[1.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.zsh'
+[1.717s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/colcon-core/packages/ground_robot_control)
+[1.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[1.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sulieman/quadrotor_target_tracking/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/custom_interfaces
+[1.731s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces' for CMake module files
+[1.731s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces' for CMake config files
+[1.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[1.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[1.744s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[1.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[1.744s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/lib'
+[1.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[1.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[1.757s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[1.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[1.757s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/bin'
+[1.757s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[1.758s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/lib/python3.10/site-packages'
+[1.758s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/bin'
+[1.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[1.770s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.sh'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.bash'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[1.771s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[1.819s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[1.841s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces' for CMake module files
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces' for CMake config files
+[1.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[1.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[1.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[1.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[1.855s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/lib'
+[1.855s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[1.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[1.868s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[1.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/bin'
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/lib/python3.10/site-packages'
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/bin'
+[1.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[1.882s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[1.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.sh'
+[1.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.bash'
+[1.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[1.883s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[1.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sulieman/quadrotor_target_tracking/src/robots_description': PYTHONPATH=/home/sulieman/quadrotor_target_tracking/build/robots_description/prefix_override:/home/sulieman/quadrotor_target_tracking/install/robots_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robots_description build --build-base /home/sulieman/quadrotor_target_tracking/build/robots_description/build install --record /home/sulieman/quadrotor_target_tracking/build/robots_description/install.log --single-version-externally-managed
+[2.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sulieman/quadrotor_target_tracking/src/simulation': PYTHONPATH=/home/sulieman/quadrotor_target_tracking/build/simulation/prefix_override:/home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/simulation build --build-base /home/sulieman/quadrotor_target_tracking/build/simulation/build install --record /home/sulieman/quadrotor_target_tracking/build/simulation/install.log --single-version-externally-managed
+[2.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sulieman/quadrotor_target_tracking/src/simulation' returned '0': PYTHONPATH=/home/sulieman/quadrotor_target_tracking/build/simulation/prefix_override:/home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/simulation build --build-base /home/sulieman/quadrotor_target_tracking/build/simulation/build install --record /home/sulieman/quadrotor_target_tracking/build/simulation/install.log --single-version-externally-managed
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/simulation' for CMake module files
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/simulation' for CMake config files
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/simulation/lib'
+[2.363s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/simulation/bin'
+[2.363s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/simulation/lib/pkgconfig/simulation.pc'
+[2.363s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages'
+[2.363s] Level 1:colcon.colcon_core.shell:create_environment_hook('simulation', 'pythonpath')
+[2.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/hook/pythonpath.ps1'
+[2.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/hook/pythonpath.dsv'
+[2.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/hook/pythonpath.sh'
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/simulation/bin'
+[2.375s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simulation)
+[2.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/package.ps1'
+[2.386s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/package.dsv'
+[2.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/package.sh'
+[2.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/package.bash'
+[2.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/package.zsh'
+[2.387s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sulieman/quadrotor_target_tracking/install/simulation/share/colcon-core/packages/simulation)
+[2.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sulieman/quadrotor_target_tracking/src/robots_description' returned '0': PYTHONPATH=/home/sulieman/quadrotor_target_tracking/build/robots_description/prefix_override:/home/sulieman/quadrotor_target_tracking/install/robots_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robots_description build --build-base /home/sulieman/quadrotor_target_tracking/build/robots_description/build install --record /home/sulieman/quadrotor_target_tracking/build/robots_description/install.log --single-version-externally-managed
+[2.399s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/robots_description' for CMake module files
+[2.399s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/robots_description' for CMake config files
+[2.400s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/robots_description/lib'
+[2.400s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/robots_description/bin'
+[2.400s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/robots_description/lib/pkgconfig/robots_description.pc'
+[2.400s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/robots_description/lib/python3.10/site-packages'
+[2.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('robots_description', 'pythonpath')
+[2.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/hook/pythonpath.ps1'
+[2.412s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/hook/pythonpath.dsv'
+[2.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/hook/pythonpath.sh'
+[2.413s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/robots_description/bin'
+[2.413s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robots_description)
+[2.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/package.ps1'
+[2.424s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/package.dsv'
+[2.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/package.sh'
+[2.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/package.bash'
+[2.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/package.zsh'
+[2.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sulieman/quadrotor_target_tracking/install/robots_description/share/colcon-core/packages/robots_description)
+[10.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/quadrotor_control -- -j16 -l16
+[10.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/quadrotor_control
+[10.208s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(quadrotor_control)
+[10.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sulieman/quadrotor_target_tracking/build/quadrotor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/quadrotor_control
+[10.219s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control' for CMake module files
+[10.220s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control' for CMake config files
+[10.220s] Level 1:colcon.colcon_core.shell:create_environment_hook('quadrotor_control', 'cmake_prefix_path')
+[10.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/hook/cmake_prefix_path.ps1'
+[10.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/hook/cmake_prefix_path.dsv'
+[10.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/hook/cmake_prefix_path.sh'
+[10.231s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib'
+[10.231s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/bin'
+[10.231s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/pkgconfig/quadrotor_control.pc'
+[10.231s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/python3.10/site-packages'
+[10.231s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/bin'
+[10.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.ps1'
+[10.242s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.dsv'
+[10.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.sh'
+[10.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.bash'
+[10.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.zsh'
+[10.242s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/colcon-core/packages/quadrotor_control)
+[10.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(quadrotor_control)
+[10.279s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control' for CMake module files
+[10.280s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control' for CMake config files
+[10.280s] Level 1:colcon.colcon_core.shell:create_environment_hook('quadrotor_control', 'cmake_prefix_path')
+[10.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/hook/cmake_prefix_path.ps1'
+[10.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/hook/cmake_prefix_path.dsv'
+[10.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/hook/cmake_prefix_path.sh'
+[10.291s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib'
+[10.291s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/bin'
+[10.291s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/pkgconfig/quadrotor_control.pc'
+[10.291s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/python3.10/site-packages'
+[10.291s] Level 1:colcon.colcon_core.environment:checking '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/bin'
+[10.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.ps1'
+[10.302s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.dsv'
+[10.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.sh'
+[10.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.bash'
+[10.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.zsh'
+[10.302s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/colcon-core/packages/quadrotor_control)
+[10.303s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.303s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.303s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.303s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.317s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.317s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.317s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.325s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.339s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sulieman/quadrotor_target_tracking/install/local_setup.ps1'
+[10.339s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sulieman/quadrotor_target_tracking/install/_local_setup_util_ps1.py'
+[10.340s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sulieman/quadrotor_target_tracking/install/setup.ps1'
+[10.351s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sulieman/quadrotor_target_tracking/install/local_setup.sh'
+[10.351s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sulieman/quadrotor_target_tracking/install/_local_setup_util_sh.py'
+[10.352s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sulieman/quadrotor_target_tracking/install/setup.sh'
+[10.362s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sulieman/quadrotor_target_tracking/install/local_setup.bash'
+[10.363s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sulieman/quadrotor_target_tracking/install/setup.bash'
+[10.373s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sulieman/quadrotor_target_tracking/install/local_setup.zsh'
+[10.374s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sulieman/quadrotor_target_tracking/install/setup.zsh'

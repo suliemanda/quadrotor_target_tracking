@@ -1,0 +1,28 @@
+[0.215s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/ground_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/ground_robot_control -- -j16 -l16
+[0.414s] [35m[1mConsolidate compiler generated dependencies of target ground_robot_reference[0m
+[0.414s] [ 50%] Built target ground_robot_PID
+[0.414s] [ 75%] [32mBuilding CXX object CMakeFiles/ground_robot_reference.dir/src/ground_robot_reference.cpp.o[0m
+[2.748s] [100%] [32m[1mLinking CXX executable ground_robot_reference[0m
+[2.863s] [100%] Built target ground_robot_reference
+[2.870s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/ground_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --build /home/sulieman/quadrotor_target_tracking/build/ground_robot_control -- -j16 -l16
+[2.886s] Invoking command in '/home/sulieman/quadrotor_target_tracking/build/ground_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/ground_robot_control
+[2.889s] -- Install configuration: ""
+[2.889s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/lib/ground_robot_control/ground_robot_PID
+[2.890s] -- Installing: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/lib/ground_robot_control/ground_robot_reference
+[2.890s] -- Set runtime path of "/home/sulieman/quadrotor_target_tracking/install/ground_robot_control/lib/ground_robot_control/ground_robot_reference" to ""
+[2.890s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ament_index/resource_index/package_run_dependencies/ground_robot_control
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ament_index/resource_index/parent_prefix_path/ground_robot_control
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/environment/ament_prefix_path.sh
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/environment/ament_prefix_path.dsv
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/environment/path.sh
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/environment/path.dsv
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/local_setup.bash
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/local_setup.sh
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/local_setup.zsh
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/local_setup.dsv
+[2.891s] -- Installing: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.dsv
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ament_index/resource_index/packages/ground_robot_control
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/cmake/ground_robot_controlConfig.cmake
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/cmake/ground_robot_controlConfig-version.cmake
+[2.891s] -- Up-to-date: /home/sulieman/quadrotor_target_tracking/install/ground_robot_control/share/ground_robot_control/package.xml
+[2.892s] Invoked command in '/home/sulieman/quadrotor_target_tracking/build/ground_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sulieman/quadrotor_target_tracking/install/simulation:/home/sulieman/quadrotor_target_tracking/install/robots_description:/opt/ros/humble /usr/bin/cmake --install /home/sulieman/quadrotor_target_tracking/build/ground_robot_control

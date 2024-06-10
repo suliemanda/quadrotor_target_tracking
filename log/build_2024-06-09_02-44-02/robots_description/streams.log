@@ -1,0 +1,43 @@
+[0.895s] Invoking command in '/home/sulieman/quadrotor_target_tracking/src/robots_description': PYTHONPATH=/home/sulieman/quadrotor_target_tracking/build/robots_description/prefix_override:/home/sulieman/quadrotor_target_tracking/install/robots_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robots_description build --build-base /home/sulieman/quadrotor_target_tracking/build/robots_description/build install --record /home/sulieman/quadrotor_target_tracking/build/robots_description/install.log --single-version-externally-managed
+[1.045s] running egg_info
+[1.058s] writing ../../build/robots_description/robots_description.egg-info/PKG-INFO
+[1.058s] writing dependency_links to ../../build/robots_description/robots_description.egg-info/dependency_links.txt
+[1.058s] writing requirements to ../../build/robots_description/robots_description.egg-info/requires.txt
+[1.059s] writing top-level names to ../../build/robots_description/robots_description.egg-info/top_level.txt
+[1.151s] reading manifest file '../../build/robots_description/robots_description.egg-info/SOURCES.txt'
+[1.152s] writing manifest file '../../build/robots_description/robots_description.egg-info/SOURCES.txt'
+[1.152s] running build
+[1.152s] running build_py
+[1.152s] copying robots_description/__init__.py -> /home/sulieman/quadrotor_target_tracking/build/robots_description/build/lib/robots_description
+[1.152s] running install
+[1.152s] /home/sulieman/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.152s] !!
+[1.152s] 
+[1.152s]         ********************************************************************************
+[1.152s]         Please avoid running ``setup.py`` directly.
+[1.152s]         Instead, use pypa/build, pypa/installer or other
+[1.152s]         standards-based tools.
+[1.152s] 
+[1.152s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.152s]         ********************************************************************************
+[1.153s] 
+[1.153s] !!
+[1.153s]   self.initialize_options()
+[1.155s] running install_lib
+[1.167s] running install_data
+[1.177s] copying resource/robots_description -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/ament_index/resource_index/packages
+[1.177s] copying package.xml -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description
+[1.177s] copying robots/dji_m100.urdf -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/robots
+[1.177s] copying robots/ground_robot.xacro -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/robots
+[1.177s] copying robots/ground_robot.xacro.urdf -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/robots
+[1.177s] copying meshes/dji_m100.dae -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/meshes
+[1.185s] copying meshes/Marker0.obj -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/meshes
+[1.185s] copying meshes/Marker0.jpeg -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/meshes
+[1.185s] copying meshes/Marker0.mtl -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/meshes
+[1.185s] copying config/dji_m100_params.yaml -> /home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/config
+[1.185s] running install_egg_info
+[1.198s] removing '/home/sulieman/quadrotor_target_tracking/install/robots_description/lib/python3.10/site-packages/robots_description-0.0.0-py3.10.egg-info' (and everything under it)
+[1.198s] Copying ../../build/robots_description/robots_description.egg-info to /home/sulieman/quadrotor_target_tracking/install/robots_description/lib/python3.10/site-packages/robots_description-0.0.0-py3.10.egg-info
+[1.198s] running install_scripts
+[1.235s] writing list of installed files to '/home/sulieman/quadrotor_target_tracking/build/robots_description/install.log'
+[1.261s] Invoked command in '/home/sulieman/quadrotor_target_tracking/src/robots_description' returned '0': PYTHONPATH=/home/sulieman/quadrotor_target_tracking/build/robots_description/prefix_override:/home/sulieman/quadrotor_target_tracking/install/robots_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robots_description build --build-base /home/sulieman/quadrotor_target_tracking/build/robots_description/build install --record /home/sulieman/quadrotor_target_tracking/build/robots_description/install.log --single-version-externally-managed

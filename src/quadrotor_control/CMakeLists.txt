@@ -47,7 +47,7 @@ install(TARGETS quadrotor_mpc
 
 
   add_executable(quadrotor_vision src/quadrotor_vision.cpp)
-  target_link_libraries (quadrotor_vision Eigen3::Eigen yaml-cpp casadi)
+  target_link_libraries (quadrotor_vision Eigen3::Eigen)
   
   target_include_directories(quadrotor_vision PUBLIC
      $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}>

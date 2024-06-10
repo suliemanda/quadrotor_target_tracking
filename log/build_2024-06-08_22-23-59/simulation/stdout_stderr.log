@@ -1,0 +1,49 @@
+running egg_info
+creating ../../build/simulation/simulation.egg-info
+writing ../../build/simulation/simulation.egg-info/PKG-INFO
+writing dependency_links to ../../build/simulation/simulation.egg-info/dependency_links.txt
+writing requirements to ../../build/simulation/simulation.egg-info/requires.txt
+writing top-level names to ../../build/simulation/simulation.egg-info/top_level.txt
+writing manifest file '../../build/simulation/simulation.egg-info/SOURCES.txt'
+reading manifest file '../../build/simulation/simulation.egg-info/SOURCES.txt'
+writing manifest file '../../build/simulation/simulation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sulieman/quadrotor_target_tracking/build/simulation/build
+creating /home/sulieman/quadrotor_target_tracking/build/simulation/build/lib
+creating /home/sulieman/quadrotor_target_tracking/build/simulation/build/lib/simulation
+copying simulation/__init__.py -> /home/sulieman/quadrotor_target_tracking/build/simulation/build/lib/simulation
+running install
+/home/sulieman/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running install_lib
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages/simulation
+copying /home/sulieman/quadrotor_target_tracking/build/simulation/build/lib/simulation/__init__.py -> /home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages/simulation
+byte-compiling /home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages/simulation/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/ament_index
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/ament_index/resource_index
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/ament_index/resource_index/packages
+copying resource/simulation -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/ament_index/resource_index/packages
+copying package.xml -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/world
+copying world/canyonview_field.world -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/world
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/launch
+copying launch/target_tracking.launch.py -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/launch
+creating /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/config
+copying config/simulation.yaml -> /home/sulieman/quadrotor_target_tracking/install/simulation/share/simulation/config
+running install_egg_info
+Copying ../../build/simulation/simulation.egg-info to /home/sulieman/quadrotor_target_tracking/install/simulation/lib/python3.10/site-packages/simulation-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/sulieman/quadrotor_target_tracking/build/simulation/install.log'

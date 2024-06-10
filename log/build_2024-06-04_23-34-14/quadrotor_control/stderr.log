@@ -1,8 +1,0 @@
-/usr/bin/ld: CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o: in function `QuadrotorReferencePublisher::QuadrotorReferencePublisher()::{lambda(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)#2}::operator()(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >) const':
-quadrotor_vision.cpp:(.text._ZZN27QuadrotorReferencePublisherC4EvENKUlSt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEEE0_clES6_[_ZZN27QuadrotorReferencePublisherC4EvENKUlSt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEEE0_clES6_]+0x184): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
-/usr/bin/ld: quadrotor_vision.cpp:(.text._ZZN27QuadrotorReferencePublisherC4EvENKUlSt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEEE0_clES6_[_ZZN27QuadrotorReferencePublisherC4EvENKUlSt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEEE0_clES6_]+0x1bb): undefined reference to `cv::waitKey(int)'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/quadrotor_vision.dir/build.make:205: quadrotor_vision] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/quadrotor_vision.dir/all] Error 2
-gmake[1]: *** Waiting for unfinished jobs....
-gmake: *** [Makefile:146: all] Error 2

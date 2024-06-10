@@ -39,12 +39,24 @@ def generate_launch_description():
         output='screen',
         parameters=[mpc_controller_parameters]
     )
+    ground_robot_control_node = Node(
+        package='ground_robot_control',
+        executable='ground_robot_PID',
+        output='screen',
+    )
 
-    reference_publisher_node = Node(
+    quadrotor_reference_publisher_node = Node(
         package='quadrotor_control',
         executable='quadrotor_vision',
         output='screen',
         parameters=[ref_parameters]
+
+    )
+    ground_robot_reference_publisher_node=Node(
+        package='ground_robot_control',
+        executable='ground_robot_reference',
+        output='screen',
+
 
     )
     # quadrotor_description_publisher=  Node(
@@ -79,6 +91,8 @@ def generate_launch_description():
                          output='screen'),
                             #    spawn_quadrotor,
                                #spawn_ground_robot,
-                            #   mpc_controller_node,
-                               reference_publisher_node, 
+                              mpc_controller_node,
+                              ground_robot_control_node,
+                               quadrotor_reference_publisher_node, 
+                                 ground_robot_reference_publisher_node
                               ])

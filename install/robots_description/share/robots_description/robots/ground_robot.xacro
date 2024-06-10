@@ -2,7 +2,7 @@
 <robot name="ground_robot" xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:property name="wheel_radius" value="0.1"/>
   <xacro:property name="wheel_width" value="0.05"/>
-  <xacro:property name="base_width" value="0.5"/>
+  <xacro:property name="base_width" value="0.6"/>
   <xacro:property name="base_length" value="0.8"/>
   <xacro:property name="base_height" value="0.1"/>
   
@@ -142,7 +142,7 @@
     </plugin>
 </gazebo>
 <gazebo reference="base_link">
-  <material>Gazebo/Blue</material>
+  <material>Gazebo/Green</material>
 </gazebo>
 
 </robot>

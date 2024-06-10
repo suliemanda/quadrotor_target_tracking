@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target ground_robot_reference[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ground_robot_PID.dir/src/ground_robot_PID.cpp.o[0m
+[ 75%] Built target ground_robot_reference
+In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/sulieman/quadrotor_target_tracking/src/ground_robot_control/src/ground_robot_PID.cpp:1[m[K:
+/usr/include/c++/11/bits/stl_algo.h: In instantiation of ‘[01m[Kconstexpr std::pair<const _Tp&, const _Tp&> std::minmax(const _Tp&, const _Tp&, _Compare) [with _Tp = double; _Compare = double][m[K’:
+[01m[K/home/sulieman/quadrotor_target_tracking/src/ground_robot_control/src/ground_robot_PID.cpp:92:33:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/stl_algo.h:3324:20:[m[K [01;31m[Kerror: [m[K‘[01m[K__comp[m[K’ cannot be used as a function
+ 3324 |       return [01;31m[K__comp(__b, __a)[m[K ? pair<const _Tp&, const _Tp&>(__b, __a)
+      |              [01;31m[K~~~~~~^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ground_robot_PID.dir/build.make:76: CMakeFiles/ground_robot_PID.dir/src/ground_robot_PID.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ground_robot_PID.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -92,8 +92,6 @@ quadrotor_vision_EXTERNAL_OBJECTS =
 
 quadrotor_vision: CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o
 quadrotor_vision: CMakeFiles/quadrotor_vision.dir/build.make
-quadrotor_vision: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
-quadrotor_vision: /usr/local/lib/libcasadi.so.3.7
 quadrotor_vision: /opt/ros/humble/lib/librclcpp.so
 quadrotor_vision: /home/sulieman/quadrotor_target_tracking/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
 quadrotor_vision: /home/sulieman/quadrotor_target_tracking/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
