@@ -13,7 +13,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.105"/>
       <geometry>
-        <mesh filename="/home/sulieman/quadrotor_target_tracking/install/robots_description/share/robots_description/meshes/dji_m100.dae"/>
+        <mesh filename="/root/ros2ws/install/robots_description/share/robots_description/meshes/dji_m100.dae"/>
       </geometry>
     </visual>
     <collision>

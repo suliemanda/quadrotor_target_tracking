@@ -38,14 +38,14 @@
          <visual name="marker">
             <origin rpy="0.0 -1.570796327 0.0" />
             <geometry>
-                <mesh filename="/home/sulieman/quadrotor_target_tracking/src/robots_description/meshes/Marker0.obj" scale="1.0 1.0 1.0" />
+                <mesh filename="$(find robots_description)/meshes/Marker0.obj" scale="1.0 1.0 1.0" />
             </geometry>
         </visual> 
     </link>
   <joint name="aruco" type="fixed">
      <parent link="base_link"/>
       <child link="marker"/>
-      <origin xyz="0 -${base_width/2} ${base_height/2+0.01}" rpy="0 0 0"/>
+      <origin xyz="0 -${base_width/2-0.05} ${base_height/2+0.05}" rpy="0 0 0"/>
   </joint>
 
   <!-- Wheels -->
@@ -141,8 +141,6 @@
         <update_rate>100.0</update_rate>
     </plugin>
 </gazebo>
-<gazebo reference="base_link">
-  <material>Gazebo/Green</material>
-</gazebo>
+
 
 </robot>

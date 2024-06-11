@@ -1,3 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target ground_robot_reference[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/ground_robot_PID.dir/src/ground_robot_PID.cpp.o[0m
-[ 75%] Built target ground_robot_reference

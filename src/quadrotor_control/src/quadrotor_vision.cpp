@@ -47,8 +47,8 @@ public:
                                0, 0, 0, 0, 0, 1);
         KF.measurementMatrix = (cv::Mat_<float>(2, 6) << 1, 0, 0, 0, 0, 0,
                                 0, 1, 0, 0, 0, 0);
-        double sigma_jerk_x = 0.01;
-        double sigma_jerk_y = 0.01;
+        double sigma_jerk_x = 0.1;
+        double sigma_jerk_y = 0.1;
 
         KF.processNoiseCov = (cv::Mat_<float>(6, 6) << (1.0 / 9.0) * pow(dt_measure, 6) * sigma_jerk_x, 0, (1.0 / 6.0) * pow(dt_measure, 5) * sigma_jerk_x, 0, 1.0 / 3.0 * pow(dt_measure, 4) * sigma_jerk_x, 0,
                               0, (1.0 / 9.0) * pow(dt_measure, 6) * sigma_jerk_y, 0, (1.0 / 6.0) * pow(dt_measure, 5) * sigma_jerk_y, 0, 1.0 / 3.0 * pow(dt_measure, 4) * sigma_jerk_y,

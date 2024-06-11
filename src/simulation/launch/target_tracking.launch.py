@@ -3,7 +3,7 @@ from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument,ExecuteProcess
 from launch.substitutions import LaunchConfiguration, TextSubstitution, PythonExpression
 
-from ament_index_python.packages import get_package_share_directory
+from ament_index_python.packages import get_package_share_directory 
 import yaml
 import os
 import xacro
@@ -25,9 +25,12 @@ def generate_launch_description():
     ground_robot_file_name="ground_robot"
     world_file= os.path.join(simulation_share_dir,'world', world_file_name+'.world')
     description_share_dir=get_package_share_directory('robots_description')
-    quadrotor_urdf=os.path.join(description_share_dir,'robots', quadrotor_file_name+'.urdf')
+    urdf_shar_dir=os.path.join(description_share_dir,'robots')
+    quadrotor_xacro=os.path.join(description_share_dir,'robots', quadrotor_file_name+'.xacro')
     ground_robot_xacro=os.path.join(description_share_dir,'robots',ground_robot_file_name+'.xacro')
-    ground_robot_urdf=os.path.join(ground_robot_xacro+'.urdf')
+    ground_robot_urdf=xacro.process_file(ground_robot_xacro).toxml()
+    quadrotor_urdf=xacro.process_file(quadrotor_xacro).toxml()
+    
 
 
 
@@ -59,38 +62,46 @@ def generate_launch_description():
 
 
     )
-    # quadrotor_description_publisher=  Node(
-    #         package='robot_state_publisher',
-    #         executable='robot_state_publisher',
-    #         name='robot_state_publisher',
-    #         output='screen',
-    #         arguments=[quadrotor_urdf])
-    spawn_quadrotor=Node( package='gazebo_ros',
-            executable='spawn_entity.py',
-            name='urdf_spawner',
+    quadrotor_description_publisher=  Node(
+            package='robot_state_publisher',
+            executable='robot_state_publisher',
+            name='robot_state_publisher',
             output='screen',
-            arguments=["-file", quadrotor_urdf, "-entity",quadrotor_file_name ])
-    spawn_ground_robot=Node( package='gazebo_ros',
-    	executable='spawn_entity.py',
-    	name='urdf_spawner',
-    	output='screen',
-    	arguments=["-file", ground_robot_urdf, "-x", '0',"-y",'1',"-z", '0.5',"-entity",ground_robot_file_name ])
-
+            namespace='quadrotor',
+            parameters=[
+                {
+                    'robot_description': quadrotor_urdf,
+                }
+            ],
+            
+            )
+    
+    GRobot_description_publisher=  Node(
+            package='robot_state_publisher',
+            executable='robot_state_publisher',
+            name='robot_state_publisher',
+            output='screen',
+            namespace='ground_robot',
+            parameters=[
+                {
+                    'robot_description': ground_robot_urdf,
+                }
+            ])
 
     return LaunchDescription([
-        # quadrotor_description_publisher,
-        
+         
+        GRobot_description_publisher,
+        quadrotor_description_publisher,
+
         ExecuteProcess(
             cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so','-s', 'libgazebo_ros_init.so',world_file],  
             output='screen'),
         ExecuteProcess(
-                        cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py','-file', ground_robot_urdf,"-x", '0',"-y",'0',"-z", '0.2',"-entity",ground_robot_file_name],  
+                        cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py','-topic', '/ground_robot/robot_description',"-x", '0',"-y",'0',"-z", '0.2',"-entity",ground_robot_file_name],  
                          output='screen'),
         ExecuteProcess(
-                        cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py','-file', quadrotor_urdf,"-x", '-1',"-y",'0',"-z", '0',"-entity",quadrotor_file_name],  
+                        cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py','-topic','/quadrotor/robot_description',"-x", '-1',"-y",'0',"-z", '0',"-entity",quadrotor_file_name],  
                          output='screen'),
-                            #    spawn_quadrotor,
-                               #spawn_ground_robot,
                               mpc_controller_node,
                               ground_robot_control_node,
                                quadrotor_reference_publisher_node, 

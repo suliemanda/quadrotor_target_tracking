@@ -159,7 +159,7 @@ public:
             trajvd.push_back(V);
             trajq.push_back(qd);
             trajwzd.push_back(wzd);
-            std::cout << "xd: " << xd << " yd: " << yd << " zd: " << zd << " vxd: " << vxd << " vyd: " << vyd <<  "\n";
+            // std::cout << "xd: " << xd << " yd: " << yd << " zd: " << zd << " vxd: " << vxd << " vyd: " << vyd <<  "\n";
 
             for (int i = 0; i < N; i++)
             {
