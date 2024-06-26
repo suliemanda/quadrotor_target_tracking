@@ -25,8 +25,8 @@ This package was created as a course project for the robot programming course at
 
     ```shell
     cd quadrotor_target_tracking
-    ./build_docker.sh
-    ./run_docker.sh
+    ./build_docker.bash
+    ./run_docker.bash
     ```
 
 ## Usage
