@@ -1,0 +1,56 @@
+-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found custom_interfaces: 0.0.0 (/home/sulieman/quadrotor_target_tracking/install/custom_interfaces/share/custom_interfaces/cmake)
+-- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found OpenCV: /usr (found version "4.5.4") 
+-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/include/quadrotor_control>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sulieman/quadrotor_target_tracking/build/quadrotor_control
+[ 25%] [32mBuilding CXX object CMakeFiles/quadrotor_mpc.dir/src/quadrotor_mpc.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/quadrotor_vision.dir/src/quadrotor_vision.cpp.o[0m
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:[m[K In lambda function:
+[01m[K/home/sulieman/quadrotor_target_tracking/src/quadrotor_control/src/quadrotor_vision.cpp:150:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  150 |                     for (int i = 0; [01;35m[Ki < markerIds.size()[m[K; i++)
+      |                                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[ 75%] [32m[1mLinking CXX executable quadrotor_mpc[0m
+[ 75%] Built target quadrotor_mpc
+[100%] [32m[1mLinking CXX executable quadrotor_vision[0m
+[100%] Built target quadrotor_vision
+-- Install configuration: ""
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_mpc
+-- Set runtime path of "/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_mpc" to ""
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_vision
+-- Set runtime path of "/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_vision" to ""
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/package_run_dependencies/quadrotor_control
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/parent_prefix_path/quadrotor_control
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.sh
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.dsv
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.sh
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.dsv
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.bash
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.sh
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.zsh
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.dsv
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.dsv
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/packages/quadrotor_control
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig.cmake
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig-version.cmake
+-- Installing: /home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.xml

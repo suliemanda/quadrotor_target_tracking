@@ -56,7 +56,7 @@ public:
                               0, (1.0 / 6.0) * pow(dt_measure, 5) * sigma_jerk_y, 0, (1.0 / 4.0) * pow(dt_measure, 4) * sigma_jerk_y, 0, 1.0 / 2.0 * pow(dt_measure, 3) * sigma_jerk_y,
                               (1.0 / 3.0) * pow(dt_measure, 4) * sigma_jerk_x, 0, (1.0 / 2.0) * pow(dt_measure, 3) * sigma_jerk_x, 0, dt_measure * dt_measure * sigma_jerk_x, 0,
                               0, (1.0 / 3.0) * pow(dt_measure, 4) * sigma_jerk_y, 0, (1.0 / 2.0) * pow(dt_measure, 3) * sigma_jerk_y, 0, dt_measure * dt_measure * sigma_jerk_y);
-        KF.measurementNoiseCov = (cv::Mat_<float>(2, 2) << 1e-1, 0, 0, 1e-1);
+        KF.measurementNoiseCov = (cv::Mat_<float>(2, 2) << 1e-2, 0, 0, 1e-2);
         KF.statePost = (cv::Mat_<float>(6, 1) << 0, 0, 0, 0, 0, 0);
 
         RCLCPP_INFO(this->get_logger(), "Reference publisher node initialized");

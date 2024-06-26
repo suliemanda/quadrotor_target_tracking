@@ -1,0 +1,17 @@
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_mpc
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/lib/quadrotor_control/quadrotor_vision
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/package_run_dependencies/quadrotor_control
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/parent_prefix_path/quadrotor_control
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.sh
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/ament_prefix_path.dsv
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.sh
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/environment/path.dsv
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.bash
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.sh
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.zsh
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/local_setup.dsv
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.dsv
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/ament_index/resource_index/packages/quadrotor_control
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig.cmake
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/cmake/quadrotor_controlConfig-version.cmake
+/home/sulieman/quadrotor_target_tracking/install/quadrotor_control/share/quadrotor_control/package.xml

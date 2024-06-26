@@ -1,0 +1,11 @@
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/uninstall.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/quadrotor_control_uninstall.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/quadrotor_mpc.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/quadrotor_vision.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/test.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/edit_cache.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/rebuild_cache.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/list_install_components.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/install.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/install/local.dir
+/home/sulieman/quadrotor_target_tracking/build/quadrotor_control/CMakeFiles/install/strip.dir
