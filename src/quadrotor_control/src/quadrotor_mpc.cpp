@@ -54,7 +54,8 @@ public:
                                                torque2rotors(0, 1), torque2rotors(1, 1), torque2rotors(2, 1), torque2rotors(3, 1),
                                                torque2rotors(0, 2), torque2rotors(1, 2), torque2rotors(2, 2), torque2rotors(3, 2),
                                                torque2rotors(0, 3), torque2rotors(1, 3), torque2rotors(2, 3), torque2rotors(3, 3)};
-        mpc = MPC(M, J(0, 0), J(1, 1), J(2, 2), torque2rotors_v, t2w, dt, N);
+        mpc = MPC(M, J(0, 0), J(1, 1), J(2, 2), arm, kf, km /* torque2rotors_v */, t2w, dt, N);
+        std::cout << torque2rotors << "\n";
         auto timer_callback = [this]() -> void
         {
             // Code to be executed every 5ms
@@ -260,12 +261,14 @@ public:
             M = 2.355;
             J = Eigen::Matrix3d{{0.01152, 0, 0}, {0, 0.01152, 0}, {0, 0, 0.0218}};
         }
-        Eigen::Matrix4<double> rotors2torque{
-            {-arm, arm, arm, -arm},
-            {-arm, -arm, arm, arm},
-            {-km / kf, +km / kf, -km / kf, km / kf},
-            {1, 1, 1, 1}};
-        torque2rotors = rotors2torque.inverse();
+        // Eigen::Matrix4d rotors2torque{
+        // };
+        torque2rotors = Eigen::Matrix4d{{-arm, arm, arm, -arm},
+                                        {-arm, -arm, arm, arm},
+                                        {-km / kf, +km / kf, -km / kf, km / kf},
+                                        {1, 1, 1, 1}}
+                            .inverse();
+        std::cout << "torque2rotors:  " << torque2rotors << "\n";
     }
 
     rclcpp::Publisher<geometry_msgs::msg::Wrench>::SharedPtr rotor1_publisher_;

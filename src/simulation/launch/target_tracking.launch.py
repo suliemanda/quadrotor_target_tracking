@@ -2,7 +2,9 @@ from launch import LaunchDescription, LaunchContext
 from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument,ExecuteProcess
 from launch.substitutions import LaunchConfiguration, TextSubstitution, PythonExpression
-
+from launch.event_handlers import OnExecutionComplete, OnProcessExit, OnProcessIO, OnProcessStart, OnShutdown
+from launch.actions import (DeclareLaunchArgument, EmitEvent, ExecuteProcess,
+                            LogInfo, RegisterEventHandler, TimerAction)
 from ament_index_python.packages import get_package_share_directory 
 import yaml
 import os
@@ -87,23 +89,35 @@ def generate_launch_description():
                     'robot_description': ground_robot_urdf,
                 }
             ])
-
+    start_sim= ExecuteProcess(
+        cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so','-s', 'libgazebo_ros_init.so',world_file],  
+        output='screen')
+    spawn_quad=   ExecuteProcess(
+        cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py','-topic','/quadrotor/robot_description',"-x", '-1',"-y",'0',"-z", '0',"-entity",quadrotor_file_name],  
+        output='screen')
+    spawn_gr=ExecuteProcess(
+        cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py','-topic', '/ground_robot/robot_description',"-x", '0',"-y",'0',"-z", '0.2',"-entity",ground_robot_file_name],  
+        output='screen')
     return LaunchDescription([
-         
-        GRobot_description_publisher,
-        quadrotor_description_publisher,
+        start_sim,
+        RegisterEventHandler(
+            OnProcessStart(
+                target_action=start_sim,
+                on_start=[
+                    LogInfo(msg='simulation started'),
+                    spawn_quad,
+                    quadrotor_description_publisher,
+                    quadrotor_reference_publisher_node,
+                    mpc_controller_node,
+                    ])),
+                    
+            RegisterEventHandler(
+                OnExecutionComplete( 
+                    target_action=spawn_quad,
+                    on_completion=[ LogInfo(msg='quad rotor spawned'),
+                                   spawn_gr,GRobot_description_publisher,
+                                   ground_robot_control_node,
+                                   ground_robot_reference_publisher_node])),
 
-        ExecuteProcess(
-            cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so','-s', 'libgazebo_ros_init.so',world_file],  
-            output='screen'),
-        ExecuteProcess(
-                        cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py','-topic', '/ground_robot/robot_description',"-x", '0',"-y",'0',"-z", '0.2',"-entity",ground_robot_file_name],  
-                         output='screen'),
-        ExecuteProcess(
-                        cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py','-topic','/quadrotor/robot_description',"-x", '-1',"-y",'0',"-z", '0',"-entity",quadrotor_file_name],  
-                         output='screen'),
-                              mpc_controller_node,
-                              ground_robot_control_node,
-                               quadrotor_reference_publisher_node, 
-                                 ground_robot_reference_publisher_node
+            
                               ])

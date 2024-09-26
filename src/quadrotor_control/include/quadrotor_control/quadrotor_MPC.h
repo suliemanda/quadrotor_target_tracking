@@ -13,20 +13,20 @@ class MPC
 {
 public:
     // Constructor
-    MPC(){}; 
+    MPC() {};
     /**
- * MPC controller for quadrotors.
- *
- * @param mass  mass.
- * @param Ix inertia around x axis.
- * @param Iy inertia around y axis.
- * @param Iz inertia around z axis.
- * @param wrench2rotorthrust trasnforms wrench control commands to individual rotor thrusts (written as vector).
- * @param thrust2wieght thrust to wieght ratio
- * @param dt time step
- * @param n number of nodes
- */
-    MPC(double mass, double Ix, double Iy, double Iz, casadi::DM wrench2rotorthrust, double thrust2wieght, double dt, int n)
+     * MPC controller for quadrotors.
+     *
+     * @param mass  mass.
+     * @param Ix inertia around x axis.
+     * @param Iy inertia around y axis.
+     * @param Iz inertia around z axis.
+     * @param wrench2rotorthrust trasnforms wrench control commands to individual rotor thrusts (written as vector).
+     * @param thrust2wieght thrust to wieght ratio
+     * @param dt time step
+     * @param n number of nodes
+     */
+    MPC(double mass, double Ix, double Iy, double Iz, double arm, double kf, double km /* casadi::DM wrench2rotorthrust */, double thrust2wieght, double dt, int n)
     {
         opti.solver("ipopt", p_opts);
         N = n;
@@ -50,8 +50,14 @@ public:
         I = casadi::DM::diag(casadi::DM::vertcat({Ix, Iy, Iz}));
         t2w = thrust2wieght;
         dt_ = dt;
-        wrench2thrust = casadi::DM::reshape(wrench2rotorthrust, 4, 4);
-
+        Eigen::Matrix4d rotors2torque{
+            {-arm, arm, arm, -arm},
+            {-arm, -arm, arm, arm},
+            {-km / kf, +km / kf, -km / kf, km / kf},
+            {1, 1, 1, 1}};
+        Eigen::Matrix4d torque2rotors = rotors2torque.inverse();
+        wrench2thrust =casadi::DM{std::vector<double>(torque2rotors.data(),torque2rotors.data()+torque2rotors.size())};
+        wrench2thrust = casadi::DM::reshape(wrench2thrust, 4, 4);
         init_q = casadi::DM::zeros(4, N + 1);
         init_q(0, all) = 1;
         q_ = opti.variable(4, N + 1);
@@ -93,19 +99,19 @@ public:
         }
     };
     /**
- * Solve MPC.
- *
- * @param p_0  initial position.
- * @param v_0 initial velocity.
- * @param q0 inertia orientation (as quatenion).
- * @param omega_0 initial body rates.
- * @param p_g desired future positions.
- * @param v_g desired future velocities.
- * @param q_g desired future orientations.
- * @param wz_g desired future body rates.
- * @param Q weights vector.
- * @return optimal control commands (Wrench).
- */
+     * Solve MPC.
+     *
+     * @param p_0  initial position.
+     * @param v_0 initial velocity.
+     * @param q0 inertia orientation (as quatenion).
+     * @param omega_0 initial body rates.
+     * @param p_g desired future positions.
+     * @param v_g desired future velocities.
+     * @param q_g desired future orientations.
+     * @param wz_g desired future body rates.
+     * @param Q weights vector.
+     * @return optimal control commands (Wrench).
+     */
     std::vector<double> solve(const std::vector<double> &p_0, const std::vector<double> &v_0, const std::vector<double> &q_0, const std::vector<double> &omega_0, const std::vector<Point> &p_g, const std::vector<Point> &v_g, const std::vector<Eigen::Quaterniond> &q_g, const std::vector<double> &wz_g, const std::vector<double> &Q)
     {
         // Define the optimization variables
@@ -155,8 +161,8 @@ public:
         auto x_opt = r.value(pos_);
         auto v_opt = r.value(vel_);
         auto omega_opt = r.value(omega_);
-        init_p = r.value(pos_); 
-        init_v = r.value(vel_); 
+        init_p = r.value(pos_);
+        init_v = r.value(vel_);
         init_u = r.value(u_);
         init_q = r.value(q_);
         init_omega = r.value(omega_);
@@ -173,7 +179,7 @@ public:
 private:
     std::tuple<casadi::MX, casadi::MX, casadi::MX> dynamics_q(const casadi::MX &pos, const casadi::MX &vel, const casadi::MX &q, const casadi::MX &omega, const casadi::MX &u)
     {
-        casadi::MX current_pos=pos;
+        casadi::MX current_pos = pos;
         casadi::MX F_x = 2 * (q(0) * q(2) + q(1) * q(3)) * u(3);
         casadi::MX F_y = 2 * (q(2) * q(3) - q(0) * q(1)) * u(3);
         casadi::MX F_z = (1 - 2 * q(1) * q(1) - 2 * q(2) * q(2)) * u(3) - m * g;
